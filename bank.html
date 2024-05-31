@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inside Bank</title>
+    <link rel="stylesheet" href="bank.css">
+</head>
+<body>
+    <h1 class="main-title">Welcome to our <span class="highlight">Soykot Bank PLC</span> !!!</h1>
+    <main>
+        <section class="section-spacing">
+            <div class="grid-container text-color">
+                <div class="card bg-green">
+                    <h4 class="card-title">Deposit</h4>
+                    <h2 class="card-value">$<span id="update-deposit">0</span></h2>
+                </div>
+                <div class="card bg-yellow">
+                    <h4 class="card-title">Withdraw</h4>
+                    <h2 class="card-value">$ <span id="total-withdraw">0</span></h2>
+                </div>
+                <div class="card bg-violet">
+                    <h4 class="card-title">Balance</h4>
+                    <h2 class="card-value">$<span id="update-balance">4053.00</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-spacing">
+            <div class="grid-container">
+                <div class="card bg-fuchsia">
+                    <h4 class="card-title text-color">Please Deposit</h4>
+                    <input type="number" id="deposit-input" placeholder="Enter your deposit money" class="input-field">
+                    <button id="btn-deposit" class="action-button">Deposit</button>
+                </div>
+                <div class="card bg-sky">
+                    <h4 class="card-title text-color">Please Withdraw</h4>
+                    <input type="number" id="withdraw-input" placeholder="Enter your withdraw money" class="input-field">
+                    <button id="btn-withdraw" class="action-button">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
